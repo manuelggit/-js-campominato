@@ -10,13 +10,26 @@
 
 var mineArray = [];
 
-for (i = 0; i < 16; i++){
-  var mina = numRandom(1, 100);
-  mineArray.push(mina);
+// for (i = 0; i < 16; i++){
+//   var mina = numRandom(1, 100);
+//   var found = inArray(numero, mineArray);
+//   if (found == false) {
+//       mineArray.push(mina); // pusho solo se la mina non è già presente
+//   }
+// }
+// console.log(mineArray);
+
+// mineArray deve essere lungo 16
+while(mineArray.length < 16) {
+   var mina = numRandom(1, 100);
+   var found = inArray(numero, mineArray);
+   if (found == false) {
+       mineArray.push(mina); // pusho solo se la mina non è già presente
+   }
+   console.log(found);
+   console.log('lunghezza array = ' + mineArray.length);
 }
 console.log(mineArray);
-
-var found;
 
 var numero = parseInt(prompt('inserisci un numero'));
 console.log('numero scelto = ' + numero);
@@ -29,13 +42,14 @@ function numRandom(min, max) {
   return Math.floor((Math.random() * (max - min + 1)) + min);
 }
 
-function inArray(x , array) {
-  var trovato = false;
+function inArray(x, array) {
+  var found = false;
   var i = 0;
   while (found == false && i < array.length) {
    if (array[i] == x)  {
      found = true;
    }
+   i++;
   }
-  i++;
+  return found;
 }
