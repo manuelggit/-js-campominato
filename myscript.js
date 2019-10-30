@@ -13,6 +13,9 @@ for (i = 0; i < 16; i++){
   console.log(mina);
 }
 
+var numero = parseInt(prompt('inserisci un numero'));
+console.log('numero scelto = ' + numero);
+
 
 
 // FUNZIONI
