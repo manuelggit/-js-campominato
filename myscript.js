@@ -12,15 +12,14 @@ var mineArray = [];
 
 for (i = 0; i < 16; i++){
   var mina = numRandom(1, 100);
-  console.log(mina);
+  mineArray.push(mina);
 }
+console.log(mineArray);
 
-
+var found;
 
 var numero = parseInt(prompt('inserisci un numero'));
 console.log('numero scelto = ' + numero);
-
-
 
 // FUNZIONI
 
@@ -28,4 +27,15 @@ console.log('numero scelto = ' + numero);
 function numRandom(min, max) {
   // il computer genera il suo numero
   return Math.floor((Math.random() * (max - min + 1)) + min);
+}
+
+function inArray(x , array) {
+  var trovato = false;
+  var i = 0;
+  while (found == false && i < array.length) {
+   if (array[i] == x)  {
+     found = true;
+   }
+  }
+  i++;
 }
