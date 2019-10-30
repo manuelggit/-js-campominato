@@ -8,10 +8,14 @@
 // i 16 numeri vietati/mina, devono essere tutti diversi, non possono esserci doppioni;
 // l’utente non può inserire due volte lo stesso numero, ma sempre numeri diversi.
 
+var mineArray = [];
+
 for (i = 0; i < 16; i++){
   var mina = numRandom(1, 100);
   console.log(mina);
 }
+
+
 
 var numero = parseInt(prompt('inserisci un numero'));
 console.log('numero scelto = ' + numero);
