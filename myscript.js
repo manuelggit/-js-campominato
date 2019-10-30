@@ -31,8 +31,26 @@ while(mineArray.length < 16) {
 }
 console.log(mineArray);
 
-var numero = parseInt(prompt('inserisci un numero'));
-console.log('numero scelto = ' + numero);
+var maxNum = 84;
+
+var utenteArray = [];
+
+while (true) { // lo faccio fino a 84 tentativi, se non è presente il numero nel mineArray e se non ho inserito numeri identici
+  // while // se è nell'utenteArray
+  // prompt utente
+  var numero = parseInt(prompt('inserisci un numero'));
+  console.log('numero scelto = ' + numero);
+  if(found == true){
+    console.log('hai perso');
+  } else {
+     // controllo se siamo a maxNum
+    if (maxNum == 84 && found == false){
+      console.log('hai vinto');
+  }
+}
+}
+
+
 
 // FUNZIONI
 
