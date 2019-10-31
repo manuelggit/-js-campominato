@@ -8,16 +8,7 @@
 // i 16 numeri vietati/mina, devono essere tutti diversi, non possono esserci doppioni;
 // l’utente non può inserire due volte lo stesso numero, ma sempre numeri diversi.
 
-var mineArray = [];
-
-// for (i = 0; i < 16; i++){
-//   var mina = numRandom(1, 100);
-//   var found = inArray(numero, mineArray);
-//   if (found == false) {
-//       mineArray.push(mina); // pusho solo se la mina non è già presente
-//   }
-// }
-// console.log(mineArray);
+// var mineArray = [];
 
 // mineArray deve essere lungo 16
 while(mineArray.length < 16) {
