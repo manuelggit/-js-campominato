@@ -37,8 +37,10 @@ while (okArray.length < 84) {
   if (mineArray.includes(scelta) == true){
     console.log('hai perso');
     console.log('punteggio = ' + okArray.length);
-  } if(okArray.includes(scelta) == true) {
+  } else if(okArray.includes(scelta) == true) {
     alert('non sceglere lo stesso numero');
+  } else if(scelta < 1 || scelta > 100) {
+    alert('scegli un numero da 1 a 100');
   } else {
     okArray.push(scelta);
     console.log('ok:' , okArray);
