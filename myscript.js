@@ -28,28 +28,23 @@ console.log('mine:' , mineArray);
 
 // variabili scelta e altre
 
-var scelta = 0; // sicuramente non è una mina
 var perso = false; // quando il numero dell'utente non è una mina
 var okArray = []; //array vuoto dei numeri inseriti dall'utente che non sono mine
 console.log('ok:' , okArray);
 
-//   console.log('scelta utente = ' + scelta);
-    var scelta = parseInt(prompt('scegli un numero'));
-    okArray.push(scelta);
-    if (scelta !== mineArray[i]){
-      console.log('hai vinto');
-    // chiedo all'utente un numero
-    } else {
-    console.log('hai perso');
-    }
+var scelta = parseInt(prompt('scegli un numero'));
+okArray.push(scelta);
+console.log('punteggio = ' + okArray.length);
+console.log('ok:' , okArray);
 
 
+while (okArray.length < 84) {
+  var scelta = parseInt(prompt('scegli un numero'));
+  okArray.push(scelta);
+  console.log('punteggio = ' + okArray.length);
+  console.log('ok:' , okArray);
 
-
-
-// }
-
-// se è uguale a una mina la partita termina
+}
 
 
 
