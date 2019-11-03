@@ -44,13 +44,11 @@ while (okArray.length < 84) {
     console.log('ok:' , okArray);
   }
   i++;
-
-
-
-
 }
 
-
+if(okArray.length = 84) {
+  console.log('HAI VINTO TUTTO');
+}
 
 // devo dare il punteggio finale = devo "conservare" i numeri diversi dalle mine e contarli (anche perchè il giocatore non può inserire numeri uguali)
 
