@@ -24,16 +24,19 @@ while(mineArray.length < 16){
     }
   i++
 }
-console.log('mine: ' + mineArray);
+console.log('mine:' , mineArray);
 
-// chiedo all'utente un numero
+// variabili scelta e altre
 
-var scelta = parseInt(prompt('scegli un numero'));
-
+var scelta;
 var perso = false; // quando il numero dell'utente non è una mina
 var okArray = []; //array vuoto dei numeri inseriti dall'utente che non sono mine
 
 // se è uguale a una mina la partita termina
+while(perso === false) {
+  scelta = parseInt(prompt('scegli un numero')); // chiedo all'utente un numero
+  console.log('scelta utente = ' + scelta);
+}
 
 // se è diversa si continua uguale
 
