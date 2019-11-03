@@ -12,16 +12,19 @@
 
 var mineArray = []; // predispongo un array vuoto che ospiti le mine
 
-
-
 // per generare 16 mine devo ripetere la funzione 16 volte
-
-for(i=0; i < 16; i++) {
-  var mina = numRandom(1, 100); //invoco la funzione per generare una mina
-  console.log(mina);
+i = 0;
+while(i < 16){
+  var numero = numRandom(1, 100); //invoco la funzione per generare una mina
+  console.log(numero);
+    // devo controllare che siano 16 mine diverse = potrei dover ciclare più di 16 volte
+    if(mineArray.includes(numero) == false) {
+      mineArray.push(numero);
+    }
+  i++
 }
+console.log(mineArray);
 
-// devo controllare che siano 16 mine diverse = potrei dover ciclare più di 16 volte
 
 // se il numero non è all'interno dell'array lo metto dentro
 
