@@ -19,18 +19,22 @@ while(mineArray.length < 16){
   console.log(numero);
     // devo controllare che siano 16 mine diverse = potrei dover ciclare più di 16 volte
     if(mineArray.includes(numero) == false) {
+      // se il numero non è all'interno dell'array lo metto dentro
       mineArray.push(numero);
     }
   i++
 }
 console.log('mine: ' + mineArray);
 
-
-// se il numero non è all'interno dell'array lo metto dentro
-
 // chiedo all'utente un numero
 
+var scelta = parseInt(prompt('scegli un numero'));
+
+var perso = false; // quando il numero dell'utente non è una mina
+var okArray = []; //array vuoto dei numeri inseriti dall'utente che non sono mine
+
 // se è uguale a una mina la partita termina
+
 // se è diversa si continua uguale
 
 // devo dare il punteggio finale = devo "conservare" i numeri diversi dalle mine e contarli (anche perchè il giocatore non può inserire numeri uguali)
