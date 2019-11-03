@@ -40,9 +40,12 @@ console.log('ok:' , okArray);
 
 while (okArray.length < 84) {
   var scelta = parseInt(prompt('scegli un numero'));
-  okArray.push(scelta);
-  console.log('punteggio = ' + okArray.length);
-  console.log('ok:' , okArray);
+  if (mineArray.includes(scelta) == false){
+    okArray.push(scelta);
+    console.log('punteggio = ' + okArray.length);
+    console.log('ok:' , okArray);
+  }
+
 
 }
 
