@@ -32,20 +32,16 @@ var perso = false; // quando il numero dell'utente non è una mina
 var okArray = []; //array vuoto dei numeri inseriti dall'utente che non sono mine
 console.log('ok:' , okArray);
 
-var scelta = parseInt(prompt('scegli un numero'));
-okArray.push(scelta);
-console.log('punteggio = ' + okArray.length);
-console.log('ok:' , okArray);
-
-
 while (okArray.length < 84) {
   var scelta = parseInt(prompt('scegli un numero'));
-  if (mineArray.includes(scelta) == false){
-    okArray.push(scelta);
+  if (mineArray.includes(scelta) == true){
+    console.log('hai perso');
     console.log('punteggio = ' + okArray.length);
+  } else {
+    okArray.push(scelta);
     console.log('ok:' , okArray);
   }
-
+  i++;
 
 }
 
